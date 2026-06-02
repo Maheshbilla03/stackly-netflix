@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stackly Creator Dashboard</title>
+  <link rel="stylesheet" href="das.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <h2>STACKLY</h2>
+    <a href="#" class="nav-link active" data-section="dashboard">Dashboard</a>
+    <a href="#" class="nav-link" data-section="analytics">Analytics</a>
+    <a href="#" class="nav-link" data-section="revenue">Revenue</a>
+    <a href="#" class="nav-link" data-section="content">Content Library</a>
+    <a href="#" class="nav-link" data-section="messages">Messages</a>
+    <a href="#" class="nav-link" data-section="tickets">Tickets</a>
+    <a href="#" class="nav-link" data-section="settings">Settings</a>
+  </aside>
+
+  <main class="main">
+
+    <header>
+      <h3>Welcome, Mahesh</h3>
+      <div>
+        <span>maheshbilla.com</span>
+        <a href="index.html" class="logout-btn">Logout</a>
+      </div>
+    </header>
+
+    <section id="dashboard" class="overview active-section">
+      <h3>Overview</h3>
+      <div class="cards">
+        <div class="card"><p>Total Views</p><h2>152,400</h2></div>
+        <div class="card"><p>Subscribers</p><h2>9,820</h2></div>
+        <div class="card"><p>Total Revenue</p><h2>$15,850</h2></div>
+        <div class="card"><p>Active Content</p><h2>42</h2></div>
+      </div>
+
+      <div class="charts">
+        <div class="chart-box"><canvas id="lineChart"></canvas></div>
+        <div class="chart-box"><canvas id="donutChart"></canvas></div>
+      </div>
+    </section>
+
+    <section id="analytics" class="content-section">
+      <h3>Analytics</h3>
+      <div class="cards">
+        <div class="card"><p>Watch Time</p><h2>12,560 hrs</h2></div>
+        <div class="card"><p>Engagement Rate</p><h2>87%</h2></div>
+        <div class="card"><p>New Users</p><h2>1,250</h2></div>
+      </div>
+    </section>
+
+    <section id="revenue" class="content-section">
+      <h3>Revenue</h3>
+      <div class="cards">
+        <div class="card"><p>Monthly Revenue</p><h2>$5,250</h2></div>
+        <div class="card"><p>Yearly Revenue</p><h2>$62,500</h2></div>
+        <div class="card"><p>Premium Users</p><h2>4,800</h2></div>
+      </div>
+    </section>
+
+    <section id="content" class="content-section">
+      <h3>Content Library</h3>
+      <div class="cards">
+        <div class="card"><p>Movies</p><h2>120</h2></div>
+        <div class="card"><p>TV Shows</p><h2>75</h2></div>
+        <div class="card"><p>Documentaries</p><h2>30</h2></div>
+      </div>
+    </section>
+
+    <section id="messages" class="content-section">
+      <h3>Messages</h3>
+      <div class="card"><p><strong>John:</strong> New content uploaded successfully.</p></div>
+      <div class="card"><p><strong>Sarah:</strong> Revenue report is ready.</p></div>
+      <div class="card"><p><strong>Admin:</strong> System maintenance scheduled.</p></div>
+    </section>
+
+    <section id="tickets" class="content-section">
+      <h3>Support Tickets</h3>
+      <div class="card"><p>#1025 - Video playback issue</p><span>Open</span></div>
+      <div class="card"><p>#1026 - Subscription payment failed</p><span>Pending</span></div>
+      <div class="card"><p>#1027 - Profile update request</p><span>Resolved</span></div>
+    </section>
+
+    <section id="settings" class="content-section">
+      <h3>Settings</h3>
+      <div class="card">
+        <label>Site Name</label>
+        <input type="text" value="Stackly Netflix">
+      </div>
+      <div class="card">
+        <label>Email</label>
+        <input type="email" value="maheshbilla@gmail.com">
+      </div>
+      <div class="card">
+        <button id="saveBtn">Save Changes</button>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="das.js"></script>
+</body>
+</html>
