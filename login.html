@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly Stream Login</title>
+  <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+
+<section class="login-page">
+  <div class="overlay"></div>
+
+  <div class="left-content">
+    <h3>STACKLY NETFLIX</h3>
+    <h1>Unlimited<br>movies, TV shows<br>and more</h1>
+    <p>Watch anywhere. Cancel anytime.</p>
+  </div>
+
+  <div class="login-box">
+    <h2>Sign In</h2>
+
+    <form id="loginForm">
+      <select id="role">
+        <option value="">Select Role</option>
+        <option value="viewer">Viewer</option>
+      
+        <option value="creator">Creator</option>
+      </select>
+
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+
+    <a href="das.html" class="signin-btn">Sign In</a>
+
+      <div class="options">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <p class="signup">New to Stackly Stream? <a href="#">Sign up now.</a></p>
+
+      <div class="social-text">Or sign in with</div>
+
+      <div class="social-buttons">
+        <button type="button">Google</button>
+        <button type="button">Facebook</button>
+      </div>
+
+      <p id="message"></p>
+    </form>
+  </div>
+</section>
+
+<script src="login.js"></script>
+</body>
+</html>
